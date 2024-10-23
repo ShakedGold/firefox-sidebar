@@ -1,0 +1,13 @@
+#sidebar-header {
+  display: none;
+}
+
+/* remove maximum/minimum width restriction of sidebar */
+#sidebar-box {
+  max-width: none !important;
+  min-width: 0px !important;
+}
+
+#main-window[titlepreface*="‎"] #tabbrowser-tabs{
+  display: none !important;
+}

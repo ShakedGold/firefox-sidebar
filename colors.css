@@ -1,0 +1,42 @@
+:root {
+  --toolbar-bgcolor: #0e0e0e !important;
+  --toolbar-field-focus-background-color: #0e0e0e !important;
+  --urlbar-box-focus-bgcolor: #0e0e0e !important;
+  --urlbar-box-hover-bgcolor: #0e0e0e !important;
+  --toolbar-field-background-color: #1e1e1e !important;
+  --arrowpanel-background: #0e0e0e !important;
+  --arrowpanel-border-color: #1e1e1e !important;
+  --button-primary-color: rgb(0, 0, 0) !important;
+  --button-primary-hover-bgcolor: rgb(130, 130, 130) !important;
+  --button-primary-bgcolor: rgb(190, 190, 190) !important;
+  --button-hover-bgcolor: #1e1e1e;
+  --sidebar-background-color: #0e0e0e !important;
+}
+
+.search-container input {
+  outline: none !important;
+}
+
+menuitem,
+menuseparator,
+menucaption,
+tooltip,
+menu {
+  background-color: #0e0e0e !important;
+}
+
+menuitem:hover,
+menu:hover,
+menu[open="true"],
+menuitem[_moz-menuactive="true"] {
+  background-color: #1e1e1e !important;
+}
+
+#ContentSelectDropdownPopup>* {
+  color: white !important;
+}
+
+menupopup {
+  --panel-background: #0e0e0e !important;
+  --panel-border-color: #1e1e1e !important;
+}
