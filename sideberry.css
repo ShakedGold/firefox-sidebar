@@ -1,0 +1,151 @@
+#root.root {
+	--frame-el-overlay-selected-border: #2e2e2e;
+}
+#root.root {
+	--toolbar-el-overlay-selected-border: #2e2e2e;
+}
+#root.root {
+	--tabs-pinned-height: 40px;
+}
+#root.root {
+	--tabs-margin: 2px;
+}
+#root.root {
+	--ntb-btn-height: 40px;
+}
+
+#root.root {
+	--tabs-pinned-width: 50px;
+}
+#root.root {
+	--tabs-activated-bg: rgb(30, 30, 30);
+}
+#root.root {
+	--toolbar-el-overlay-selected-bg: rgba(255,255,255,0.141);
+}
+#root.root {
+	--frame-bg: #0e0e0e;
+}
+#root.root {
+	--toolbar-bg: rgb(20, 20, 20);
+}
+#root {
+	--tabs-font: 10pt Segoe UI;
+  --tabs-count-font: .625rem Segoe UI;
+  --bookmarks-bookmark-font: .875rem Segoe UI;
+  --bookmarks-folder-font: 10pt Segoe UI;
+}
+
+/*
+ * Add margins and rounding around tabs
+*/ 
+ 
+#root {
+  --tabs-height: 35px;
+}
+ 
+/* Background layer */
+ 
+.Tab {
+  margin: 0 10px;
+  width: unset;
+}
+ 
+/* Resize and reposition favicons */
+.Tab .fav {
+  width: 20px;
+  height: 20px;
+	position: relative;
+	top: 2px;
+	left: 4px;
+}
+.Tab .audio  {
+	box-shadow: unset !important;
+	background-color: unset !important;
+	margin-left: 7px;
+}
+
+
+
+.Tab .t-box .title {
+	position: relative;
+	left: 5px;
+}
+
+.Tab .close svg {
+	transform: scale(1.3);
+}
+.Tab:not([data-active="true"]):hover .body {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.PinnedTabsBar .Tab .fav {
+	position: relative;
+	left: 2px;
+}
+
+
+.PinnedTabsBar .Tab[data-active="true"] .body {
+	background-color: rgba(80, 80, 80, 1);
+}
+
+.PinnedTabsBar .Tab .body {
+	background-color: rgba(50, 50, 50, 0.6);
+	border-radius: 7px;
+	margin: 5px;
+}
+.PinnedTabsBar .Tab:hover .body:before {
+	background-color: rgba(80, 80, 80, 1);
+	border-radius: 7px;
+}
+
+#root[data-pinned-tabs-position="panel"] .PinnedTabsBar {
+	grid-gap: 7px;
+}
+
+
+.PinnedTabsBar {
+	display: flex;
+	gap: 10px;
+}
+
+.PinnedTabsBar:before {
+	content : "";
+  position: absolute;
+  left    : 2%;
+  bottom  : -10px;
+  height  : 1px;
+  width   : 95%;
+  border-bottom: 1px solid rgba(40, 40, 40, 0.8);
+}
+
+.TabsPanel {
+	display: flex;
+	gap: 20px
+}
+
+.new-tab-btns .new-tab-btn svg {
+	position: absolute;
+	left: 15px;
+	filter: invert(53%) sepia(12%) saturate(20%) hue-rotate(331deg) brightness(92%) contrast(84%);
+}
+
+.new-tab-btns .new-tab-btn:before {
+	width: 95%;
+	left: 2%;
+}
+
+.new-tab-btns .new-tab-btn:after {
+	content: "New Tab";
+	position: absolute;
+	left: 40px;
+	color: gray;
+}
+
+.SearchBar {
+	margin: 7px;
+}
+
+.NavigationBar {
+  display: none !important;
+}
