@@ -1,6 +1,6 @@
 # Requirements
  - [ ] Enable sidebar in firefox
  - [ ] Enable firefox vertical tabs
- - [ ] Move the chrome dir to firefox chrome folder
+ - [ ] Move the `userChrome.css, urlbar.css, sidebar.css, colors.css` files to firefox chrome folder
  - [ ] Install Sideberry
- - [ ] Import the json and css files in sideberry folder
+ - [ ] Import the sideberry.json and sideberry.css files
